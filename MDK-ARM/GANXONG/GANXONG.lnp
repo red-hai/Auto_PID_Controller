@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"ganxong\startup_stm32f103xb.o"
+"ganxong\main.o"
+"ganxong\stm32f1xx_it.o"
+"ganxong\stm32f1xx_hal_msp.o"
+"ganxong\stm32f1xx_hal_gpio_ex.o"
+"ganxong\stm32f1xx_hal_tim.o"
+"ganxong\stm32f1xx_hal_tim_ex.o"
+"ganxong\stm32f1xx_hal.o"
+"ganxong\stm32f1xx_hal_rcc.o"
+"ganxong\stm32f1xx_hal_rcc_ex.o"
+"ganxong\stm32f1xx_hal_gpio.o"
+"ganxong\stm32f1xx_hal_dma.o"
+"ganxong\stm32f1xx_hal_cortex.o"
+"ganxong\stm32f1xx_hal_pwr.o"
+"ganxong\stm32f1xx_hal_flash.o"
+"ganxong\stm32f1xx_hal_flash_ex.o"
+"ganxong\stm32f1xx_hal_exti.o"
+"ganxong\stm32f1xx_hal_uart.o"
+"ganxong\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "GANXONG\GANXONG.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GANXONG.map" -o GANXONG\GANXONG.axf
